@@ -1,0 +1,27 @@
+[remap]
+
+importer="2d_array_texture"
+type="CompressedTexture2DArray"
+uid="uid://d3h36kv6uo8up"
+path.bptc="res://.godot/imported/indoor_scene.exr-d0baa800809dac61ecfea084eee9fee7.bptc.ctexarray"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://baking/indoor_scene.exr"
+dest_files=["res://.godot/imported/indoor_scene.exr-d0baa800809dac61ecfea084eee9fee7.bptc.ctexarray"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/channel_pack=1
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/horizontal=1
+slices/vertical=4

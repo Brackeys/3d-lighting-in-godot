@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b0xx6qmkhujh3"]
+
+[resource]
+resource_name = "Window.001"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.313559, 0.293543, 0.301755, 1)
+metallic_specular = 1.0
+roughness = 0.15

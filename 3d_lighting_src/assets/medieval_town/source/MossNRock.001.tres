@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bjv4gt4vyvy8v"]
+
+[ext_resource type="Texture2D" uid="uid://cysfubr3mj17u" path="res://assets/medieval_town/textures/Rock.png" id="1_hvolg"]
+
+[resource]
+resource_name = "MossNRock.001"
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+albedo_texture = ExtResource("1_hvolg")
+emission_enabled = true
+normal_enabled = true
+normal_scale = 0.0

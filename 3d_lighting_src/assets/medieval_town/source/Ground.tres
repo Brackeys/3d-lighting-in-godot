@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cm5ot4j3f1blf"]
+
+[ext_resource type="Texture2D" uid="uid://c07yiso3cxsk0" path="res://assets/medieval_town/textures/Ground.png" id="1_ldjap"]
+
+[resource]
+resource_name = "Ground"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_ldjap")
+emission_enabled = true

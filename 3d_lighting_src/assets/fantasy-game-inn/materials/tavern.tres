@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://dsfoirvwdtfuo"]
+
+[ext_resource type="Texture2D" uid="uid://rjd2gxgjk2js" path="res://assets/fantasy-game-inn/textures/theInn_texture_diffuse_color.png" id="1_u8wo3"]
+[ext_resource type="Texture2D" uid="uid://biced5rq4gtfe" path="res://assets/fantasy-game-inn/textures/emissive.png" id="2_no7km"]
+
+[resource]
+albedo_texture = ExtResource("1_u8wo3")
+emission_enabled = true
+emission_energy_multiplier = 8.0
+emission_texture = ExtResource("2_no7km")

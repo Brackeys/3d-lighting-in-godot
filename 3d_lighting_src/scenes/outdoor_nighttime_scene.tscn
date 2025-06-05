@@ -1,0 +1,164 @@
+[gd_scene load_steps=15 format=3 uid="uid://dh3xifp0luvq0"]
+
+[ext_resource type="Texture2D" uid="uid://b5cj5xwyni0ob" path="res://assets/hdri/kloppenheim_07_puresky_4k.hdr" id="1_ht3oo"]
+[ext_resource type="PackedScene" uid="uid://boqddvlpljf38" path="res://assets/medieval_town/medieval_town.tscn" id="3_5ll8x"]
+[ext_resource type="Material" uid="uid://csfyy8nurp152" path="res://assets/medieval_town/glowing_window_mat.tres" id="3_1722y"]
+[ext_resource type="Material" uid="uid://ds5tm3flnri6p" path="res://assets/medieval_town/lit_window_mat.tres" id="4_ad2de"]
+[ext_resource type="Material" uid="uid://pu04x430mcj4" path="res://assets/medieval_town/lamps_mat.tres" id="5_y5n42"]
+[ext_resource type="PackedScene" uid="uid://2db0i0wd2rol" path="res://scenes/guide_spheres.tscn" id="6_k1nvm"]
+[ext_resource type="VoxelGIData" uid="uid://bo7jdl20glnoe" path="res://baking/outdoor_nighttime_scene.VoxelGI_data.res" id="7_ht3oo"]
+[ext_resource type="Texture2D" uid="uid://bvc8kfyp10jm1" path="res://assets/medieval_town/textures/window_blurred.png" id="9_1722y"]
+
+[sub_resource type="Gradient" id="Gradient_quc4c"]
+offsets = PackedFloat32Array(0, 0.315217, 0.706522, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.253623, 0.253623, 0.253623, 1, 0.73936, 0.73936, 0.73936, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jhb22"]
+gradient = SubResource("Gradient_quc4c")
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_1722y"]
+panorama = ExtResource("1_ht3oo")
+energy_multiplier = 0.1
+
+[sub_resource type="Sky" id="Sky_5ll8x"]
+sky_material = SubResource("PanoramaSkyMaterial_1722y")
+
+[sub_resource type="Environment" id="Environment_ad2de"]
+background_mode = 2
+sky = SubResource("Sky_5ll8x")
+sky_rotation = Vector3(0.0610865, -0.272271, 0.226893)
+tonemap_mode = 4
+tonemap_exposure = 2.1
+glow_enabled = true
+glow_levels/2 = 1.0
+glow_levels/4 = 0.5
+glow_levels/5 = 0.2
+glow_strength = 0.7
+glow_blend_mode = 1
+glow_hdr_threshold = 2.18
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0.35, 0.530833, 0.7, 1)
+fog_density = 0.0
+fog_sky_affect = 0.0
+fog_height = 1.0
+fog_height_density = 0.05
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.025
+volumetric_fog_albedo = Color(0.2021, 0.251215, 0.47, 1)
+adjustment_enabled = true
+adjustment_brightness = 1.1
+adjustment_saturation = 1.1
+adjustment_color_correction = SubResource("GradientTexture1D_jhb22")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_5ll8x"]
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ad2de")
+
+[node name="MedievalTown" parent="." instance=ExtResource("3_5ll8x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.6, 0, 18.8)
+
+[node name="Window" type="MeshInstance3D" parent="MedievalTown/Tower" index="0"]
+transform = Transform3D(-2.36041e-10, 0.1, 0, -0.0054, -4.37114e-09, 0, 0, 5.29396e-23, 0.00709752, 0.000342251, 2.87511e-11, 0.139681)
+material_override = ExtResource("3_1722y")
+mesh = SubResource("PlaneMesh_5ll8x")
+
+[node name="RH6" parent="MedievalTown" index="6"]
+surface_material_override/1 = ExtResource("4_ad2de")
+
+[node name="RH3" parent="MedievalTown" index="7"]
+surface_material_override/1 = ExtResource("4_ad2de")
+
+[node name="BH1" parent="MedievalTown" index="10"]
+surface_material_override/1 = ExtResource("4_ad2de")
+
+[node name="BH2" parent="MedievalTown" index="11"]
+surface_material_override/1 = ExtResource("4_ad2de")
+
+[node name="BH4" parent="MedievalTown" index="12"]
+surface_material_override/1 = ExtResource("4_ad2de")
+
+[node name="Lamp" parent="MedievalTown" index="15"]
+surface_material_override/1 = ExtResource("5_y5n42")
+
+[node name="Lamp_001" parent="MedievalTown" index="16"]
+surface_material_override/1 = ExtResource("5_y5n42")
+
+[node name="Lamp2" parent="MedievalTown" index="17"]
+surface_material_override/1 = ExtResource("5_y5n42")
+
+[node name="Lamp_003" parent="MedievalTown" index="18"]
+surface_material_override/1 = ExtResource("5_y5n42")
+
+[node name="BH8" parent="MedievalTown" index="28"]
+surface_material_override/1 = ExtResource("4_ad2de")
+
+[node name="GuideSpheres" parent="." instance=ExtResource("6_k1nvm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6, 0.4, 17.2)
+
+[node name="MoonLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.481754, 0.393741, -0.782867, 0, 0.893371, 0.449319, 0.876307, -0.216461, 0.430385, 4.18832, 13.13, 25.4604)
+light_color = Color(0.71, 0.835667, 1, 1)
+light_energy = 0.6
+light_angular_distance = 2.0
+shadow_enabled = true
+
+[node name="LampLights" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3, 0, 21.6)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LampLights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6, 2.4, 4.5)
+light_color = Color(1, 0.849199, 0.647832, 1)
+light_energy = 6.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 22.0
+omni_attenuation = 1.5
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="LampLights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.56, 2.4, -7.66)
+light_color = Color(1, 0.849199, 0.647832, 1)
+light_energy = 6.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 22.0
+omni_attenuation = 1.5
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="LampLights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.03, 2.4, -6.99)
+light_color = Color(1, 0.849199, 0.647832, 1)
+light_energy = 6.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 22.0
+omni_attenuation = 1.5
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="LampLights"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.55, 2.4, 6.29)
+light_color = Color(1, 0.849199, 0.647832, 1)
+light_energy = 6.0
+light_bake_mode = 1
+shadow_enabled = true
+omni_range = 22.0
+omni_attenuation = 1.5
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(-0.0662739, 0.668953, -0.740345, 0, 0.741976, 0.670427, 0.997801, 0.0444318, -0.0491736, -9.00527, 14.0332, 19.5556)
+light_color = Color(0, 0.601333, 0.82, 1)
+light_energy = 70.0
+light_volumetric_fog_energy = 8.0
+light_projector = ExtResource("9_1722y")
+shadow_enabled = true
+spot_range = 46.0
+spot_angle = 13.0
+
+[node name="VoxelGI" type="VoxelGI" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 6.55, 19.5)
+subdiv = 2
+size = Vector3(100, 33.1, 68.7)
+data = ExtResource("7_ht3oo")
+
+[editable path="MedievalTown"]

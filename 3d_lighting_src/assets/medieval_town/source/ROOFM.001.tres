@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c2boyt2f66ujf"]
+
+[ext_resource type="Texture2D" uid="uid://biqkoirbde8ba" path="res://assets/medieval_town/textures/ROOF1.png" id="1_oalca"]
+
+[resource]
+resource_name = "ROOFM.001"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_oalca")
+emission_enabled = true

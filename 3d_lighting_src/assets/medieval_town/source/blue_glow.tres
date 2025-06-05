@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://csb3ffj8csxiq"]
+
+[resource]
+resource_name = "Window"
+vertex_color_use_as_albedo = true
+emission_enabled = true
+emission = Color(0.395318, 0.639248, 1, 1)
+emission_energy_multiplier = 7.0

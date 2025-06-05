@@ -1,0 +1,266 @@
+[gd_scene load_steps=5 format=3 uid="uid://boqddvlpljf38"]
+
+[ext_resource type="PackedScene" uid="uid://dtt3onsjncgcy" path="res://assets/medieval_town/source/MedievalTown.fbx" id="1_p5v2b"]
+[ext_resource type="Material" uid="uid://b0xx6qmkhujh3" path="res://assets/medieval_town/materials/glass.tres" id="2_jmw6h"]
+[ext_resource type="Material" uid="uid://cm5ot4j3f1blf" path="res://assets/medieval_town/source/Ground.tres" id="2_wahva"]
+[ext_resource type="Material" uid="uid://bjv4gt4vyvy8v" path="res://assets/medieval_town/source/MossNRock.001.tres" id="3_mfmjb"]
+
+[node name="MedievalTown" instance=ExtResource("1_p5v2b")]
+
+[node name="RH5" parent="." index="3"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="RH1" parent="." index="4"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="Tower" parent="." index="5"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="RH6" parent="." index="6"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="RH3" parent="." index="7"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="RH7" parent="." index="8"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="Ground" parent="." index="9"]
+material_override = ExtResource("2_wahva")
+
+[node name="BH1" parent="." index="10"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="BH2" parent="." index="11"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="BH4" parent="." index="12"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="BH5" parent="." index="13"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="BH6" parent="." index="14"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="RH8" parent="." index="24"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="RH4" parent="." index="25"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="RH2" parent="." index="26"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="BH8" parent="." index="28"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="BH7" parent="." index="29"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="BH3" parent="." index="30"]
+surface_material_override/1 = ExtResource("2_jmw6h")
+
+[node name="R4_001" parent="." index="10212"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_003" parent="." index="10213"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_004" parent="." index="10214"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_005" parent="." index="10215"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_006" parent="." index="10216"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_007" parent="." index="10217"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_008" parent="." index="10218"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_009" parent="." index="10219"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_011" parent="." index="10220"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_013" parent="." index="10221"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_014" parent="." index="10222"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_015" parent="." index="10223"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_016" parent="." index="10224"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_020" parent="." index="10225"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_022" parent="." index="10226"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_023" parent="." index="10227"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_024" parent="." index="10228"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_025" parent="." index="10229"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_010" parent="." index="10230"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_012" parent="." index="10231"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_017" parent="." index="10232"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_018" parent="." index="10233"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="R4_019" parent="." index="10234"]
+material_override = ExtResource("3_mfmjb")
+
+[node name="Stair" parent="." index="10235"]
+visible = false
+
+[node name="WoodLog3" parent="." index="10236"]
+visible = false
+
+[node name="WoodLog2" parent="." index="10237"]
+visible = false
+
+[node name="WoodLog1" parent="." index="10238"]
+visible = false
+
+[node name="Cube" parent="." index="10239"]
+visible = false
+
+[node name="Cube_002" parent="." index="10240"]
+visible = false
+
+[node name="Cube_003" parent="." index="10241"]
+visible = false
+
+[node name="Barel" parent="." index="10242"]
+visible = false
+
+[node name="Barel2" parent="." index="10243"]
+visible = false
+
+[node name="Tray" parent="." index="10244"]
+visible = false
+
+[node name="Tray_001" parent="." index="10245"]
+visible = false
+
+[node name="Lamp_002" parent="." index="10246"]
+visible = false
+
+[node name="Lamp2_001" parent="." index="10247"]
+visible = false
+
+[node name="TTop" parent="." index="10248"]
+visible = false
+
+[node name="Chimny1" parent="." index="10249"]
+visible = false
+
+[node name="Wall1" parent="." index="10250"]
+visible = false
+
+[node name="Wall2" parent="." index="10251"]
+visible = false
+
+[node name="WallSmall" parent="." index="10252"]
+visible = false
+
+[node name="Side" parent="." index="10253"]
+visible = false
+
+[node name="RockTileBottom" parent="." index="10254"]
+visible = false
+
+[node name="WCorner1" parent="." index="10255"]
+visible = false
+
+[node name="WCorner3" parent="." index="10256"]
+visible = false
+
+[node name="WCorner2" parent="." index="10257"]
+visible = false
+
+[node name="WCorner4" parent="." index="10258"]
+visible = false
+
+[node name="StoneStair2" parent="." index="10259"]
+visible = false
+
+[node name="StoneStair1" parent="." index="10260"]
+visible = false
+
+[node name="TopTileMid" parent="." index="10261"]
+visible = false
+
+[node name="TopTileMidBig" parent="." index="10262"]
+visible = false
+
+[node name="TopCornerBigA" parent="." index="10263"]
+visible = false
+
+[node name="TopCornerBigB" parent="." index="10264"]
+visible = false
+
+[node name="TopTileMidBigS" parent="." index="10265"]
+visible = false
+
+[node name="TopCornerA" parent="." index="10266"]
+visible = false
+
+[node name="TopCornerB" parent="." index="10267"]
+visible = false
+
+[node name="WindowWall" parent="." index="10268"]
+visible = false
+
+[node name="WallPlain" parent="." index="10269"]
+visible = false
+
+[node name="DoorWall2" parent="." index="10270"]
+visible = false
+
+[node name="DoorWall" parent="." index="10271"]
+visible = false
+
+[node name="TopTileMidS" parent="." index="10272"]
+visible = false
+
+[node name="CornerS1" parent="." index="10273"]
+visible = false
+
+[node name="CornerS2" parent="." index="10274"]
+visible = false
+
+[node name="GrassClump" parent="." index="10275"]
+visible = false
+
+[node name="FlowerR" parent="." index="10276"]
+visible = false
+
+[node name="FlowerW" parent="." index="10277"]
+visible = false
+
+[node name="RockB" parent="." index="10278"]
+visible = false
+
+[node name="RockA" parent="." index="10279"]
+visible = false

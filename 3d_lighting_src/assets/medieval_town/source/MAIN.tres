@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dfnjag07y1waq"]
+
+[ext_resource type="Texture2D" uid="uid://y2gn0jgs6i74" path="res://assets/medieval_town/textures/WALL2.png" id="1_ox4ft"]
+
+[resource]
+resource_name = "MAIN"
+transparency = 4
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_ox4ft")
+emission_enabled = true
